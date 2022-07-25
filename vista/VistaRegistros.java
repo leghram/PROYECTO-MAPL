@@ -38,7 +38,7 @@ public class VistaRegistros extends JPanel{
     }
     
     public static void VerRegistros(JPanel p){
-        p.setBackground(Color.RED);
+        p.setBackground(new Color(247,193,209));
         PanelVista.btnEnviar.setVisible(false);
         miraRegistros =true;
     }

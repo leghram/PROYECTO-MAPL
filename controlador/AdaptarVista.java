@@ -29,16 +29,21 @@ public class AdaptarVista implements ActionListener{
     public void actionPerformed(ActionEvent evento){
         AdaptadorBD.LlenarRegistros(panel);
         
-        AdaptadorBD.ObtenerNuevoID();
         
         if(VistaRegistros.miraRegistros){
             ModeloRegistro.alturaInicio = 0;
             panel.removeAll();
             
+            panel.setVisible(false);
+            PanelVista.panelAgregarRegistro.setVisible(true);
+            
             VistaRegistros.VerFormulario(panel);
             PanelVista.btnBuscar.setEnabled(false);
             PanelVista.btnAgregar.setText("VOLVER");
         }else{
+            PanelVista.panelAgregarRegistro.setVisible(false);
+            panel.setVisible(true);
+            
             VistaRegistros.VerRegistros(panel);
             PanelVista.btnBuscar.setEnabled(true);
             PanelVista.btnAgregar.setText("AGREGAR NUEVO");

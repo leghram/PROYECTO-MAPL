@@ -1,7 +1,6 @@
 
 package proyectomapl;
 
-import modelo.AdaptadorBD;
 import vista.MainFrame;
 
 public class PROYECTOMAPL {

@@ -10,7 +10,7 @@ public class ModeloRegistro extends JPanel{
     
     public static int alturaInicio=0;
     
-    JButton btnEditar = new JButton("Editar");
+    JButton btnEditar = new JButton("Actualizar");
     JButton btnEliminar = new JButton("Eliminar");
     public JTextField id= new JTextField(), tipoNave= new JTextField(), descripcion= new JTextField(), velocidad= new JTextField(), fuenteEnergia= new JTextField(),tripulantes= new JTextField(),pais= new JTextField();
     
